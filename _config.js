@@ -2,8 +2,8 @@ var config = {}
 
 // Update to have your correct username and password
 config.mongoURI = {
-    production: 'mongodb+srv://marsdenlwero:Marsden2001@gallery.wc344.mongodb.net/darkroom?retryWrites=true&w=majority',
-    development: 'mongodb+srv://marsdenlwero:Marsden2001@gallery.wc344.mongodb.net/darkroom-dev?retryWrites=true&w=majority',
-    test: 'mongodb+srv://marsdenlwero:Marsden2001@gallery.wc344.mongodb.net/darkroom-test?retryWrites=true&w=majority',
+    production: 'mongodb+srv://marsden:MLwero@ip-cluster.uk5nb.mongodb.net/darkroom?retryWrites=true&w=majority&appName=IP-Cluster',
+    development: 'mongodb+srv://marsden:MLwero@ip-cluster.uk5nb.mongodb.net/darkroom-dev?retryWrites=true&w=majority&appName=IP-Cluster',
+    test: 'mongodb+srv://marsden:MLwero@ip-cluster.uk5nb.mongodb.net/darkroom-test?retryWrites=true&w=majority&appName=IP-Cluster',
 }
 module.exports = config;
