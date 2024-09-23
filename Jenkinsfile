@@ -38,4 +38,13 @@ pipeline {
         }
         
     }
+    post {
+    failure {
+        mail(
+            to: 'marsdenodhiambo60@gmail.com',
+            subject: "Build Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+            body: "The build ${env.JOB_NAME} #${env.BUILD_NUMBER} has failed. View details at: ${env.BUILD_URL}"
+        )
+    }
+}
 }
