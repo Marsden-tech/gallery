@@ -39,6 +39,13 @@ pipeline {
         
     }
     post {
+    success {
+        slackSend (
+            message: "IP1 has been successfully deployed by build #${env.BUILD_ID}. Check it out on this link: https://gallery-np5f.onrender.com"
+            )
+        }
+
+
     failure {
         mail(
             to: 'marsdenodhiambo60@gmail.com',
