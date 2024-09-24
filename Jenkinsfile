@@ -41,7 +41,7 @@ pipeline {
     post {
     success {
         slackSend (
-            message: "IP1 has been successfully deployed by build #${env.BUILD_ID}. Check it out on this link: https://gallery-np5f.onrender.com"
+            message: "IP1-New Attempt has been successfully deployed by build #${env.BUILD_ID}. Check it out on this link: https://gallery-np5f.onrender.com"
             )
         }
 
